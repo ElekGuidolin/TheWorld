@@ -1,0 +1,20 @@
+Usar DNVM :
+dnvm use default
+dnvm list
+
+Usar DNX:
+
+DNX + o nome cadastrado na aplicação:
+dnx ef
+dnx web
+
+Entity Framework e DNX
+dnx ef migrations add InitialDatabase
+
+
+Estudo\Pluralsight\FullMvc\TheWorld\src\TheWorld>
+
+
+
+"Server=(localdb)\\ProjectsV13;Database=TheWorldDb;Trusted_Connection=true;MultipleActiveResultSets=true;"
+Server=ASUSI7\SQLEXPRESS;Database=TheWorldDb;User Id=TheWorldUsr;Password=TheWorldPwd;MultipleActiveResultSets=true;"

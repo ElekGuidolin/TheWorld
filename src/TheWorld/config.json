@@ -1,0 +1,9 @@
+﻿{
+  "AppSettings": {
+    "SiteEmailAddress": "elekguidolin@gmail.com",
+    "BingKey": "DONTPUTCODESHERE"
+  },
+  "Data": {
+    "WorldContextConnection": "Server=ASUSI7\\SQLEXPRESS;Database=TheWorldDb;User Id=TheWorldUsr;Password=TheWorldPwd;MultipleActiveResultSets=true;"
+  }
+}
