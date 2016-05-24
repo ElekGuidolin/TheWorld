@@ -70,7 +70,9 @@ namespace TheWorld.Models
 
         public IEnumerable<Trip> GetUserTripsWithStops(string name)
         {
-            throw new NotImplementedException();
+            return _context.Trips.Include(t => t.Stops)
+                .Where(w => w.UserName == name)
+                .ToList();
         }
 
         public bool SaveAll()
