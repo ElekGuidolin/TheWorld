@@ -14,11 +14,7 @@ input[type=text], input[type=password], textarea {
     width: 150px;
 }*/
 
-/*#main {
-    background-color: #eee;
-    padding: 4px;
-    margin: 0;
-}
+/*
 
 #footer {
     background-color: #222;
@@ -80,6 +76,10 @@ input[type=text], input[type=password], textarea {
     -webkit-transition: margin-left ease .25s;
     transition: margin-left ease .25s;
 }
+
+    #wrapper #main {
+        padding-bottom: 30px;
+    }
 
     #wrapper.hide-sidebar {
         margin-left: 0;

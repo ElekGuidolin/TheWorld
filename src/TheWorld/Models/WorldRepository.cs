@@ -63,15 +63,18 @@ namespace TheWorld.Models
 
         public Trip GetTripByName(string tripName, string name)
         {
-            return _context.Trips.Include(t => t.Stops)
+            return _context.Trips
+                .Include(t => t.Stops)
                 .Where(w => w.Name == tripName && w.UserName == name)
                 .FirstOrDefault();
         }
 
         public IEnumerable<Trip> GetUserTripsWithStops(string name)
         {
-            return _context.Trips.Include(t => t.Stops)
+            return _context.Trips
+                .Include(t => t.Stops)
                 .Where(w => w.UserName == name)
+                .OrderBy(o => o.Name)
                 .ToList();
         }
 

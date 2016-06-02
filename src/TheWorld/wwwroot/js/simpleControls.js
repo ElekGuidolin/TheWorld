@@ -1,4 +1,5 @@
-﻿(function () {
+﻿// simpleControls.js
+(function () {
 
     "use strict";
 
