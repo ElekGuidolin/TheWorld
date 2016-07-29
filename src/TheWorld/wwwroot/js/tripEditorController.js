@@ -9,13 +9,13 @@
     function tripEditorController($routeParams, $http) {
 
         var vm = this;
-        var url = "/api/trips/" + vm.tripName + "/stops";
-
         vm.tripName = $routeParams.tripName;
         vm.stops = [];
         vm.errorMessage = "";
         vm.isBusy = true;
         vm.newStop = {};
+
+        var url = "/api/trips/" + vm.tripName + "/stops";
 
         $http.get(url)
             .then(function (response) {
